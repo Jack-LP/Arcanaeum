@@ -4,7 +4,10 @@ export default {
   theme: {
     extend: {
       colors: {
-        charcoal: '#161616',
+        charcoal: {
+          100: '#161616',
+          200: '#121212',
+        },
       },
       fontFamily: {
         inter: 'Inter',

@@ -1,6 +1,6 @@
 const Sidebar = () => {
   return (
-    <div className='flex flex-col gap-10 font-crimson'>
+    <div className='flex flex-col gap-10 font-crimson w-32'>
       <ul className='flex flex-col gap-2'>
         <li>
           <a href=''>Home</a>
