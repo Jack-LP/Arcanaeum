@@ -7,7 +7,7 @@ export default {
         charcoal: '#161616',
       },
       fontFamily: {
-        iinter: 'Inter',
+        inter: 'Inter',
       },
     },
   },
