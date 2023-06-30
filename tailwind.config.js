@@ -8,6 +8,7 @@ export default {
       },
       fontFamily: {
         inter: 'Inter',
+        crimson: 'Crimson Text',
       },
     },
   },
