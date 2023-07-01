@@ -8,6 +8,7 @@ export default {
           100: '#161616',
           200: '#121212',
         },
+        teal: '#588D7D',
       },
       fontFamily: {
         inter: 'Inter',
