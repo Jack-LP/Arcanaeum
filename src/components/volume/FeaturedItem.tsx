@@ -3,8 +3,8 @@ import { ClockFill } from 'react-bootstrap-icons';
 const FeaturedItem = () => {
   return (
     <div className='relative w-[471px] h-[253px] flex items-end'>
-      <img className='absolute' src='/img/featuredItem.jpg' alt='' />
-      <div className='absolute bg-gradient-to-t from-black/60 to-transparent w-full h-full'></div>
+      <img className='absolute rounded-md' src='/img/featuredItem.jpg' alt='' />
+      <div className='absolute rounded-md bg-gradient-to-t from-black/60 to-transparent w-full h-full'></div>
       <div className='absolute top-5 right-5 flex items-center gap-1'>
         <p>24m</p>
         <ClockFill />

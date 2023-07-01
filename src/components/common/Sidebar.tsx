@@ -22,7 +22,7 @@ const Sidebar = ({ location }: Props) => {
     <div className='flex flex-col gap-10 font-crimson w-32'>
       <ul className='flex flex-col gap-2'>
         {navElements.map((item) => (
-          <Link to={item.path}>
+          <Link key={item.title} to={item.path}>
             <li
               className={`${
                 currentPath === item.path

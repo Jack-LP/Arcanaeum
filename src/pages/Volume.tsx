@@ -1,10 +1,13 @@
+import { useContext } from 'react';
 import { useParams } from 'react-router-dom';
+import DataContext from '../context/DataContext';
 import FeaturedCard from '../components/volume/FeaturedCard';
 
 const Volume = () => {
+  const { libraryData } = useContext(DataContext);
   const params = useParams();
 
-  console.log(params);
+  const volumeData = libraryData.filter((item) => item.volume === params.volId);
 
   return (
     <div className='flex flex-col gap-5 w-full'>
