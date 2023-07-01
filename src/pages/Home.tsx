@@ -1,5 +1,5 @@
 import Hero from '../components/home/Hero';
-import Browse from '../components/home/Browse';
+import Browse from '../components/home/BrowseCard';
 
 const Home = () => {
   const volumes = ['1', '2', '3'];
