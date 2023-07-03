@@ -21,6 +21,7 @@ const Volume = () => {
         <ChapterCard
           chapterData={volumeData.filter((item) => item.chapter === chapter)}
           chapterTitle={chapter}
+          volId={params.volId}
         />
       ))}
     </div>

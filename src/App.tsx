@@ -3,6 +3,7 @@ import Navbar from './components/common/Navbar';
 import Sidebar from './components/common/Sidebar';
 import Home from './pages/Home';
 import Volume from './pages/Volume';
+import Book from './pages/Book';
 
 function App() {
   const location = useLocation();
@@ -14,6 +15,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/volume/:volId' element={<Volume />} />
+          <Route path='/volume/:volId/:bookId' element={<Book />} />
         </Routes>
       </div>
     </div>
