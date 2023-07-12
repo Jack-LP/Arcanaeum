@@ -1,5 +1,5 @@
 import Hero from '../components/home/Hero';
-import Browse from '../components/home/BrowseCard';
+import BrowseCard from '../components/home/BrowseCard';
 
 const Home = () => {
   const volumes = ['1', '2', '3'];
@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <div className='flex flex-col gap-5 w-full'>
       <Hero />
-      <Browse volumes={volumes} />
+      <BrowseCard volumes={volumes} />
     </div>
   );
 };

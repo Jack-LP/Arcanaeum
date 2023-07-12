@@ -11,14 +11,19 @@ const Book = () => {
   const volumeData = libraryData.filter((book) => book.volume === params.volId);
   const bookData = volumeData.filter((book) => book.title === params.bookId)[0];
 
+  const replaceWithBr = () => {
+    return bookData.text.replace(/\n/g, '<br />');
+  };
+
   return (
-    <div className='flex flex-col gap-5'>
+    <div className='flex flex-col gap-5 w-full'>
       <Title
         title={bookData.title}
         author={bookData.author}
         desc={bookData.description}
       />
-      <Text text={bookData.text} />
+      <Text text={bookData.text} replaceWithBr={replaceWithBr} />
+      {/* <p dangerouslySetInnerHTML={{ __html: replaceWithBr() }} /> */}
     </div>
   );
 };

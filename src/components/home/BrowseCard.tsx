@@ -4,7 +4,7 @@ interface Props {
   volumes: string[];
 }
 
-const Browse = ({ volumes }: Props) => {
+const BrowseCard = ({ volumes }: Props) => {
   return (
     <div className='flex flex-col gap-5 bg-charcoal-200 p-5 rounded-md'>
       <h2 className='text-xl font-semibold'>Browse by Volume</h2>
@@ -22,4 +22,4 @@ const Browse = ({ volumes }: Props) => {
     </div>
   );
 };
-export default Browse;
+export default BrowseCard;

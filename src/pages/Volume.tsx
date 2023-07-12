@@ -1,7 +1,7 @@
 import { useContext } from 'react';
 import { useParams } from 'react-router-dom';
 import DataContext from '../context/DataContext';
-import FeaturedCard from '../components/volume/FeaturedCard';
+import Featured from '../components/volume/Featured';
 import ChapterCard from '../components/volume/ChapterCard';
 
 const Volume = () => {
@@ -16,7 +16,7 @@ const Volume = () => {
       <h1 className='text-2xl font-semibold'>{`Volume ${'I'.repeat(
         params.volId
       )} - The Histories`}</h1>
-      <FeaturedCard />
+      <Featured volumeData={volumeData} />
       {chapterData.map((chapter) => (
         <ChapterCard
           chapterData={volumeData.filter((item) => item.chapter === chapter)}
