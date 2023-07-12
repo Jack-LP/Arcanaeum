@@ -1,8 +1,8 @@
 import { useContext } from 'react';
 import { useParams } from 'react-router-dom';
 import DataContext from '../context/DataContext';
-import Title from '../components/Book/Title';
-import Text from '../components/Book/Text';
+import Title from '../components/book/Title';
+import Text from '../components/book/Text';
 
 const Book = () => {
   const { libraryData } = useContext(DataContext);

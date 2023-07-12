@@ -14,7 +14,7 @@ const FeaturedCard = ({ book, image }) => {
         src={`/img/book-covers/${image}.jpg`}
         alt=''
       />
-      <div className='absolute rounded-md bg-gradient-to-t from-black/60 to-transparent w-full h-full'></div>
+      <div className='absolute rounded-md bg-gradient-to-t from-black/75 to-black/25 w-full h-full'></div>
       <div className='absolute top-5 right-5 flex items-center gap-1'>
         <p>{calcReadingTime(book.text)}m</p>
         <ClockFill />
